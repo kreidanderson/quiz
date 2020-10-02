@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel = "stylesheet" type = "text/css" href = "quiz.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+       <!-- <button> <span class="col-md-6"><span> </button> -->
+            <button id="highscores-btn" class="col-md-2 hide text-center">Highscores</button>
+    </div>
+        <h2 class ="hide-timer">Timer: <span id="timer">60</span> Seconds Left</h2>
+   
+
+<div id = "first-page" class="hide">
+  
+       <h2 id="katiequiz" class="justify-content-center">Katie's Quiz</h2>
+       <h5 class="justify-content-center col-12">In this quiz you will be tested using time. Each time you get an answer wrong, 10 points will be deducted from your score. The highest score wins!</h5>
+       <button id="start-btn" class="start-btn hide">Start The Quiz</button>
+    </div>
+
+
+
+        <div id="q-container" class="hide-questions">
+
+            <h4 id="question">This is where the questions will go</h4>
+    
+            <div id="answers" class="btn-li">
+                <ul>
+                <button class="btn">Ans A</button>
+                <br>
+                <button class="btn">Ans B</button>
+                <br>
+                <button class="btn">Ans C</button>
+                <br>
+                <button class="btn">Ans D</button>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- See quiz.js for the array of questions: quizQuestions -->
+
+    
+        <div id="highscores-container" class="hide-highscores">
+            <h1>Highscores</h1>
+            <p>Submit your score with your initials!</p>
+            <input><button>Submit</button>
+            <ol type="1">
+                <li class="row">
+                    <div class="col-md-4">Initials</div>
+                    <div class="col-md-4">Score</div>
+               </li>
+                <li class="row">
+                    <div class="col-md-4">AIP</div>
+                    <div class="col-md-4">30</div>
+            
+
+            </ol>
+
+        </div>
+
+      
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>
